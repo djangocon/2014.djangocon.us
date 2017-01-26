@@ -45,6 +45,9 @@ def process_anchors(soup):
             if link.startswith('index.html'):
                 link = link.replace('index.html', '/')
 
+            if link.endswith('/index.html'):
+                link = link.replace('/index.html', '/')
+
             link = '/{0}'.format(link.lstrip('/'))
 
             anchor['href'] = link
