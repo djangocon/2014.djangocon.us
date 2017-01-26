@@ -231,7 +231,7 @@ a:hover {
 
 .main-header {
 	height:453px;
-	background: rgb(130,242,255) url('../images/test.png') no-repeat center bottom;
+	background: rgb(130,242,255) url('/site_media/static/images/test.png') no-repeat center bottom;
 	background-size: cover;
 
 }
@@ -250,7 +250,7 @@ a:hover {
 	padding-top: 20px;
 	color: #007481;
 	text-align: center;
-		background-image: url('../images/texture4.png'), url('../images/texture5.png');
+		background-image: url('/site_media/static/images/texture4.png'), url('/site_media/static/images/texture5.png');
 	background-repeat: no-repeat;
 	background-position: bottom right, top left;
 }
@@ -284,7 +284,7 @@ a:hover {
 
 .cta-section {
 	background-color: #88d8b5;
-	background-image: url('../images/texture3.png');
+	background-image: url('/site_media/static/images/texture3.png');
 	background-repeat: no-repeat;
 	background-position: bottom right;
 	padding:30px 0;
@@ -292,7 +292,7 @@ a:hover {
 
 .duckling-widget-section {
 	background-color: white;
-	background-image: url('../images/texture3.png');
+	background-image: url('/site_media/static/images/texture3.png');
 	background-repeat: no-repeat;
 	background-position: bottom right;
 	padding:30px 0;
@@ -306,19 +306,19 @@ a:hover {
 	background-color: #febc11;
 }
 @media (max-width: 768px){
-	.duckling-banner { 
+	.duckling-banner {
 		height: 76px;
 	}
 }
 
-.duckling-logo { 
+.duckling-logo {
 	min-width: 100px;
 	max-width: 140px;
 	margin-right: 10px;
 	float: left;
 }
 @media (max-width: 768px){
-	.duckling-logo { 
+	.duckling-logo {
 		margin: 0 auto;
 		float: none;
 	}
@@ -357,7 +357,7 @@ a:hover {
 	background-color: #fff;
 	padding-top: 70px;
 	padding-bottom: 120px;
-	background-image: url('../images/texture2.png');
+	background-image: url('/site_media/static/images/texture2.png');
 	background-position: bottom left;
 	background-repeat: no-repeat;
 }
@@ -389,7 +389,7 @@ a:hover {
 }
 
 .news-section {
-	background-image: url('../images/bike.jpg');
+	background-image: url('/site_media/static/images/bike.jpg');
 	background-position: left top;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -413,7 +413,7 @@ a:hover {
 	padding: 24px 10px 30px;
 	list-style-type: none;
 	margin-bottom: 20px;
-	background-image: url('../images/Fine-Halftone-Screen-Small.png');
+	background-image: url('/site_media/static/images/Fine-Halftone-Screen-Small.png');
 	background-repeat: repeat;
 	border-radius: 6px;
 }
@@ -538,7 +538,7 @@ a:hover {
 }
 
 #footer {
-	background: url("../images/footer-01.png") no-repeat scroll center 87% / cover  #82F2FF;
+	background: url("/site_media/static/images/footer-01.png") no-repeat scroll center 87% / cover  #82F2FF;
 	padding-top: 40px;
 	padding-bottom: 40px;
 	font-weight: 400;
