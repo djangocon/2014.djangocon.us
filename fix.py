@@ -70,6 +70,10 @@ def process_css_links(soup):
 
             anchor['href'] = link
 
+        elif not link.startswith('https'):
+            link = link.replace('http://', '//')
+            anchor['href'] = link
+
     return soup
 
 
