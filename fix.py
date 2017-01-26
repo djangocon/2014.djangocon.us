@@ -71,7 +71,7 @@ def process_css_links(soup):
 
 
 def process_form_actions(soup):
-    anchors = soup.find_all('form', src=True)
+    anchors = soup.find_all('form', action=True)
 
     for anchor in anchors:
         link = anchor['action']
@@ -80,6 +80,12 @@ def process_form_actions(soup):
 
             if link.startswith('../'):
                 link = link.replace('../', '/')
+
+            if link.startswith('index.html'):
+                link = link.replace('index.html', '/')
+
+            if link.endswith('/index.html'):
+                link = link.replace('/index.html', '/')
 
             link = '/{0}'.format(link.lstrip('/'))
 
