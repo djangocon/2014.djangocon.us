@@ -202,7 +202,7 @@
 <li>If using session authentication between the API and your app, your TempateViews must have an ensure_csrf decorator if calling operations that modify, such as POST and PUT</li>
 <li>To enable angular in your application, link to the angular js file, create a minimal app.js, and add an app=”myApp” to any tag in your template.</li>
 <li>AngularJS configurations needed to work with Django CSRF</li>
-<li>angular and django templates share the same tags - {{ }}, need to configure angular to use something else. I prefer [[ ]]. Another option is to wrap all angular specific code in {% verbatim %} tags.</li>
+<li>angular and django templates share the same tags - {{ "{{" }}" {{ "}}" }}, need to configure angular to use something else. I prefer [[ ]]. Another option is to wrap all angular specific code in {{ "{%" }} verbatim {{ "%}" }} tags.</li>
 <li>To pass back CSRF cookies to django, you must configure the xsrf Cookie and Header name in your angular app settings. (Code example)</li>
 </ul>
 <h5>AngularJS scope binding in action (code example)</h5>
